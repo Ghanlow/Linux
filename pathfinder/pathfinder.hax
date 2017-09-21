@@ -1,0 +1,21 @@
+#!/bin/bash
+# I've named this script the pathfinder
+# Let me introduce you this script.
+# The most USEFUL script of the century.
+
+# requirements :
+# firefox
+
+# steps :
+# open terminal and type
+# cd folder/to/file/
+# chmod +x pathfinder.hax
+
+#usage :
+# ./pathfinder.hax "THINGS THAT YOU ARE LOOKING FOR"
+# or
+# ./pathfinder.hax 'THINGS THAT YOU ARE LOOKING FOR'
+
+input=$1
+search=$( echo $input | tr ' ' + )
+firefox http://lmgtfy.com/?q=$search
